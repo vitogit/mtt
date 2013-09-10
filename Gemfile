@@ -41,3 +41,22 @@ gem 'jbuilder', '~> 1.2'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'cancan'
+gem 'figaro'
+gem 'less-rails'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem 'pg'
+gem 'rolify'
+gem 'therubyracer', :platform=>:ruby
+gem 'twitter-bootstrap-rails'
+gem 'unicorn'
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
+  gem 'hub', :require=>nil
+  gem 'quiet_assets'
+end
+
