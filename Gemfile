@@ -24,3 +24,7 @@ group :development do
   gem 'hub', :require=>nil
   gem 'quiet_assets'
 end
+
+group :production do
+  gem 'rails_12factor', '0.0.2'
+end
