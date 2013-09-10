@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Mtt::Application.config.secret_key_base = '402558e4533dfdfee693874e90a02e15f5ce2d4206f21f4e0d8d677c41b62fe5482ac92c3d34b45ca7a38f4515640098fd43efcc7941b16213b8f66ed7e88602'
+Mtt::Application.config.secret_key_base = '7014c46ac130a63fb1ba7cab1d5f900b5091f5e835d2be4b8add793e5305e2d642166924674792cfe23578db044d9753263969b9bb7d36ef79e4de80d537175b'
