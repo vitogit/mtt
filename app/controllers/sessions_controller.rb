@@ -15,6 +15,9 @@ class SessionsController < ApplicationController
     reset_session
     session[:user_id] = user.id
     user.add_role :admin if User.count == 1 # make the first user an admin
+
+    user.add_role :user if User.count > 1 # los demas que sean de rol user
+
     if user.email.blank?
       redirect_to edit_user_path(user), :alert => "Please enter your email address."
     else
