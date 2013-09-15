@@ -1,9 +1,14 @@
 class SessionsController < ApplicationController
 
+  skip_before_filter :verify_authenticity_token or protect_from_forgery :except => :create
   def new
     redirect_to '/auth/google_oauth2'
   end
 
+  def new_openid
+    redirect_to '/auth/google'
+
+  end
 
   def create
     auth = request.env["omniauth.auth"]

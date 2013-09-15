@@ -8,6 +8,9 @@
     <li>
     <%= link_to 'Login', signin_path %>
     </li>
+      <li>
+        <%= link_to 'Login OpenId', signin_openid_path %>
+      </li>
   <% end %>
   <% if user_signed_in? %>
     <% if current_user.has_role? :admin %>

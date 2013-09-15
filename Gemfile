@@ -12,6 +12,7 @@ gem 'figaro'
 gem 'less-rails'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
+gem 'omniauth-openid'
 gem 'pg'
 gem 'rolify'
 gem 'therubyracer', :platform=>:ruby
